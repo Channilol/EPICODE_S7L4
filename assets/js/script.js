@@ -7,6 +7,12 @@ const btnLoad3 = document.querySelector('.btnLoad3')
 const btnLoad4 = document.querySelector('.btnLoad4')
 const apiContainer = document.querySelector('.apiContainer')
 
+// pagina Details
+const petTitle = document.querySelector('.petTitle')
+const petImg = document.querySelector('.petImg')
+const photographerName = document.querySelector('.photographer')
+const photographerLink = document.querySelector('.photographerLink')
+
 const options = {
     headers: {
         Authorization: 'yqXK2yp6w2ujhvhFZ6slwI0ukK5FFOwfH5LFFqYiGS4w07I1E5usqLix'
@@ -54,6 +60,7 @@ async function fetcherCats(url, option) {
             </div>
             </div>`
         });
+
         apiContainer.innerHTML = eleApiContainer
 
         const btnsHide = document.querySelectorAll('.btnHide')
